@@ -1,0 +1,5 @@
+kafka-python
+python-psycopg2
+requests
+jsonpickle
+python-dotenv

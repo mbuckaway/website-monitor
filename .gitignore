@@ -1,3 +1,9 @@
+# Ignore out certs
+certs/
+webmonlib/Config.save.py
+.env
+.env.test
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

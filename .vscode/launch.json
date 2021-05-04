@@ -1,0 +1,46 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            }
+        },
+        {
+            "name": "Python: WebMonLib Producer (goodweb)",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/webmoncheck",
+            "args": ["-e", ".env.test", "-u", "http://www.google.com"],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+        },
+        {
+            "name": "Python: WebMonLib Producer (badweb)",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/webmoncheck",
+            "args": ["-e", ".env.test", "-u", "http://www.badweb1234123.net"],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+        },
+        {
+            "name": "Python: WebMonLib Consumer",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/webmonsave",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+        }
+
+    ]
+}

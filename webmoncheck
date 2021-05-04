@@ -1,0 +1,6 @@
+#!/usr/bin/env python3
+import webmonlib
+from webmonlib import cli_webmoncheck
+
+if __name__ == '__main__':
+    cli_webmoncheck.main()
