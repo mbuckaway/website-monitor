@@ -19,6 +19,7 @@ setup(name='website-monitor',
             'kafka-python',
             'requests',
             'jsonpickle',
-            'python-dotenv'
+            'python-dotenv',
+            'psycopg2'
         ]
 )

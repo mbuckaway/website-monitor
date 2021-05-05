@@ -30,7 +30,13 @@ brew install postgresql
 
 Once testing has been completed and/or the code moved into a container, postgresql can be removed.
 
-Similarly, client libraries would need to be installed on Linux if Linux is used.
+Similarly, client libraries would need to be installed on Linux if Linux is used. For Ubuntu 20.20, use:
+
+```bash
+sudo apt install libpq-dev
+```
+
+Your milage will vary. Depending on the Linux OS, you may have to search for the PostgresSQL client libs to allow the psycopg2 to install correctly.
 
 ## Installation
 
