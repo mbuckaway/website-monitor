@@ -77,6 +77,8 @@ webmonsave
 
 Again, this assumes the .env is in the current directory. If it is not, use the -e command line option to specify it. Keep in mind, you cannot have a .env in the current directory and specify the -e option at the same time. The .env in the current directory will take precidence.
 
+The virtual env is recommended for testing. Assuming this were to be used in a production environment, a docker container would be built run the code.
+
 ## The Config
 
 The configuration uses the dotenv package to manage the config. This means the same contents of the .env can be specified in the environment before running the programs. This makes it convenient to use in a Docker container where the environment variables can be used to configure the programs.
@@ -100,4 +102,5 @@ The following environment/.env variables are used:
 ### References
 
 [Getting started with Apache Kafka in Python](https://towardsdatascience.com/getting-started-with-apache-kafka-in-python-604b3250aa05)
+
 [How to measure Service Response time in Python](https://stackoverflow.com/questions/43252542/how-to-measure-server-response-time-for-python-requests-post-request#43260678)
